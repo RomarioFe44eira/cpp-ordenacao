@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ModeloDeNegocio;
+
+namespace AplicacaoConsole{
+    class Program{
+        static void Main(string[] args) {
+           // Console.WriteLine("Olá mundo, digite seu nome: ");
+
+            String nome = Console.ReadLine();
+            Console.WriteLine("Digite sua idade: ");
+            var idadeString = Console.ReadLine();
+            var idadeInt = Convert.ToInt32(idadeString);
+
+            Console.WriteLine("Você digitou " + nome + " e tem " + idadeInt);
+
+            Console.WriteLine(String.Format("Você digitou {0} e tem {1}", nome, idadeInt));
+
+            Console.WriteLine($"Você digitou {nome}");
+
+            Console.ReadKey();
+
+            var cliente = new Cliente("Pafuncio");
+            //Cliente.Nome = "";
+            Cliente.Sobrenome = "Silva";
+            
+            Console.WriteLine(cliente.NomeCompleto);
+            Console.ReadKey();
+        }
+    }
+}

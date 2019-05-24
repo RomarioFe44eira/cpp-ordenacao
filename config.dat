@@ -1,0 +1,10 @@
+Local arquivo 1
+Local arquivo 2
+Local arquivo 3
+
+%workspace%arquivo1.txt
+%workspace%arquivo2.txt
+%workspace%arquivo3.txt
+
+workspace
+/home/ubuntu/workspace/
